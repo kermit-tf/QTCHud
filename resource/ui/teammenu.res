@@ -223,7 +223,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"2"
-		"labelText"		"Spectate"	[$WIN32]
+		"labelText"		"&2 Spectate"	[$WIN32]
 		"textAlignment"		"Center"
 		"textinsetx"		"0"
 		"dulltext"		"0"

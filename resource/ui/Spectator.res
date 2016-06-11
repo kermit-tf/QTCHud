@@ -299,6 +299,7 @@
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"itempanel"
 		"xpos"			"9999"
+		"tall"			"0"
 
 		"ItemLabel"
 		{	
