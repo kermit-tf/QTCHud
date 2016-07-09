@@ -1,61 +1,38 @@
 "GameMenu" [$WIN32]
 {
-	"QuickplayButton"
+
+	"FindAGameButton"
+ 	{
+		"label" "#MMenu_FindAGame" 
+		"command" "toggle_play_menu"
+ 		"subimage" "glyph_multiplayer"
+		"OnlyAtMenu"	"1"
+ 	}
+	"FindAGameButtonHalfWidth"
+ 	{
+
+		"label" "#MMenu_FindAGame" 
+		"command" "toggle_play_menu"
+		"subimage" "glyph_multiplayer"
+		"OnlyInGame"	"1"
+ 	}
+
+	"CreateServerButton"
 	{
-		"label" "QUICKPLAY" 
-		"command" "quickplay"
-		"OnlyAtMenu" "0"
-	}
-	"PlayPVEButton"
+		"label" "CREATE" 
+		"command" "OpenCreateMultiplayerGameDialog"
+	} 
+
+	"DEMOUI"
 	{
-		"label" "PLAY CO-OP" 
-		"command" "playpve"
-		"OnlyAtMenu" "1"
-	}
-	"PlayCompetitiveButton"
-	{
-		"label" "#MMenu_PlayComp" 
-		"command" "ladder_ui_show"
-		"OnlyAtMenu" "1"
-		"OnlyWhenCompetitiveEnabled" "1"
+		"label" "DEMOUI"
+		"command" "engine demoui"
 	}
 	"SndRestartButton"
 	{
 		"label"		"Fix Sounds"
 		"command"	"engine snd_restart"
 		"OnlyInGame"	"1"
-	}
-	"ServerBrowserButton"
-	{
-		"label" "SERVERS" 
-		"command" "OpenServerBrowser"
-		"OnlyAtMenu" "1"
-	} 
-	"CreateServerButton"
-	{
-		"label" "CREATE" 
-		"command" "OpenCreateMultiplayerGameDialog"
-	} 
-	"ChangeServerButton"
-	{
-		"label" "SERVERS" 
-		"command" "OpenServerBrowser"
-		"OnlyInGame" "1"
-	}
-	"ReplayBrowserButton"
-	{
-		"label" "REPLAYS"
-		"command" "engine replay_reloadbrowser"
-	}
-	"SteamWorkshopButton"
-	{
-		"label" "#MMenu_SteamWorkshop"
-		"command" "engine OpenSteamWorkshopDialog"
-	}
-	"DEMOUI"
-	{
-		"label" "DEMOUI"
-		"command" "engine demoui"
 	}
 	"ToggleScoreboard"
 	{
@@ -83,11 +60,6 @@
 		"label"			"VIEW ACHIEVEMENTS"
 		"command"		"OpenAchievementsDialog"
 		"OnlyAtMenu" "1"
-	}
-    "AdvOptionsButton"
-	{
-		"label"		"SCOREBOARDS"
-		"command" "engine toggle cl_hud_minmode"
 	}
 	
 	// These buttons are only shown while in-game

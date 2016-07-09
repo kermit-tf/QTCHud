@@ -45,7 +45,7 @@
 		"ControlName"			"EditablePanel"
 		"fieldName"			"ObjectiveStatusTimePanel"
 		"xpos"				"2"
-		"ypos"				"-8"	[$WIN32]
+		"ypos"				"5"	[$WIN32]
 		"zpos"				"1"
 		"wide"				"110"
 		"tall"				"150"
@@ -78,7 +78,7 @@
 		"labelText"		"%scoretobeat%"
 		"textAlignment"		"east"
 		"xpos"			"80"
-		"ypos"			"82"
+		"ypos"			"100"
 		"zpos"			"4"
 		"wide"			"93"
 		"tall"			"30"
@@ -87,6 +87,7 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"fgcolor_override" "255 255 255 255"
+		
 	}
 	"StopWatchPointsLabel"
 	{
@@ -96,7 +97,7 @@
 		"labelText"		"%pointslabel%"
 		"textAlignment"		"east"
 		"xpos"			"90"
-		"ypos"			"82"
+		"ypos"			"100"
 		"zpos"			"4"
 		"wide"			"120"
 		"tall"			"30"
@@ -106,6 +107,8 @@
 		"enabled"		"1"
 		"wrap"			"0"
 		"fgcolor_override" "255 255 255 255"
+		
+
 	}
 
 	"StopWatchLabel"

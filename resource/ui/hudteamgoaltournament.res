@@ -1,76 +1,5 @@
-"Resource/UI/HudTeamGoal.res"
+"Resource/UI/HudTeamGoalTournament.res"
 {
-	"HudTeamGoalBG"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"HudTeamGoalBG"
-		"xpos"			"9999"
-		"ypos"			"115"
-		"zpos"			"-1"
-		"wide"			"320"
-		"tall"			"150"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor" "0 0 0 150"
-	}
-	"SwitchLabel"
-	{	
-		"ControlName"		"Label"
-		"fieldName"		"SwitchLabel"
-		"font"			"Font3"
-		"xpos"			"9999"
-		"ypos"			"135"
-		"zpos"			"1"
-		"wide"			"220"	[$WIN32]
-		"wide"			"180"	[$X360]
-		"tall"			"15"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"1"
-		"labelText"		"#TF_teamswitch_attackers"
-		"textAlignment"		"North"
-	}
-	"GoalLabel"
-	{	
-		"ControlName"		"Label"
-		"fieldName"		"GoalLabel"
-		"font"			"Font4"
-		"xpos"			"9999"
-		"ypos"			"50"
-		"zpos"			"1"
-		"wide"			"220"
-		"wide_hidef"	"200"
-		"wide_lodef"		"230"
-		"tall"			"55"
-		"tall_lodef"	"60"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"1"
-		"labelText"		""
-		"textAlignment"		"North"
-	}
-	"GoalImage"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"GoalImage"
-		"xpos"			"9999"
-		"ypos"			"140"
-		"zpos"			"1"
-		"wide"			"45"
-		"tall"			"45"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/hud_icon_attack"
-		"scaleImage"		"1"
-	}
 
 	"HudStopWatchObjective"
 	{
@@ -104,7 +33,7 @@
 			"ControlName"		"ScalableImagePanel"
 			"fieldName"		"HudStopWatchObjectiveBGSmall"
 			"xpos"			"9999"
-			"ypos"			"0"
+			"ypos"			"45"
 			"zpos"			"-1"
 			"wide"			"275"
 			"tall"			"80"
@@ -118,8 +47,8 @@
 			"src_corner_height"	"23"				// pixels inside the image
 			"src_corner_width"	"23"
 		
-			"draw_corner_width"	"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
 		"HudStopWatchObjectiveLabel"
 		{	
@@ -127,7 +56,7 @@
 			"fieldName"		"HudStopWatchObjectiveLabel"
 			"font"			"Font3"
 			"xpos"			"9999"
-			"ypos"			"15"
+			"ypos"			"25"
 			"zpos"			"1"
 			"wide"			"275"
 			"tall"			"30"

@@ -1,8 +1,8 @@
-"Resource/UI/Competitive.res"
+"Resource/UI/HudMatchStatus.res"
 {
 	"HudMatchStatus"
 	{
-		"fieldName"		"RoundSignModel"
+		"fieldName"		"HudMatchStatus"
 		"avatar_width"	"63"
 		"spacer"		"5"
 		"name_width"	"57"
@@ -27,7 +27,7 @@
 		
 		"model"
 		{
-			"modelname"	"models/props_ui/round_banner.mdl"
+			"modelname"	"models/props_ui/banner.mdl"
 			"skin"		"0"
 			"angles_x"	"30"
 			"angles_y"	"180"
@@ -64,7 +64,7 @@
 		"fieldName"		"CountdownLabel"
 		"font"			"HudFontGiant"
 		"xpos"			"cs-0.5"
-		"ypos"			"cs-0.1"
+		"ypos"			"50"
 		"wide"			"40"
 		"tall"			"40"
 		"zpos"			"5"
@@ -80,8 +80,11 @@
 
 		if_readymode
 		{
-			"xpos"			"300"
-			"ypos"			"130"
+			"visible" "0"
+		}
+		if_match
+		{
+			"visible"		"0"
 		}
 	}
 	
@@ -216,6 +219,7 @@
 		"zpos"				"0"
 		"wide"				"365"
 		"tall"				"28"
+		"visible"				"0"
 
 		"proportionaltoaparent"	"1"
 		"border"			"TFFatLineBorder"
@@ -238,6 +242,20 @@
 		"NegativeColor"			"255 48 48 255"
 		"delta_lifetime"		"1.5"
 		"delta_item_font"		"BlueB18"
+		
+		if_match
+		{
+			"xpos"					"cs-0.4"
+			"wide"					"130"
+			"ypos"					"15"
+			"delta_item_x"			"35"
+			"delta_item_start_y"	"12"
+			"delta_item_end_y"		"50"
+			"PositiveColor"			"0 255 0 255"
+			"NegativeColor"			"255 0 0 255"
+			"delta_lifetime"		"1.5"
+			"delta_item_font"		"BlueB18"
+		}
 		
 		"TimePanelValue"
 		{
@@ -272,7 +290,7 @@
 		"max_size"	"19"
 
 		"6v6_gap"	"4"
-		"12v12_gap"	"1"
+		"12v12_gap"	"2"
 
 		"team1_grow_dir" "west"
 		"team1_base_x"	"c-45"
@@ -285,7 +303,7 @@
 		"playerpanels_kv"
 		{
 			"visible"		"0"
-			"wide"			"25"
+			"wide"			"60"
 			"tall"			"50"
 			"zpos"			"1"
 
@@ -353,7 +371,7 @@
 				"ypos"					"19"
 				"zpos"					"5"
 				"wide"					"f0"
-				"tall"					"2"				
+				"tall"					"3"				
 				"autoResize"			"0"
 				"pinCorner"				"0"
 				"visible"				"1"

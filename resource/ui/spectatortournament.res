@@ -516,6 +516,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"ItemLabel"
 			"xpos"			"9999"
+			"tall"			"0"
 			"labelText"		"#FreezePanel_Item"
 			"textAlignment"	"south-west"
 
