@@ -171,7 +171,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"SetupLabel"
 		"xpos"			"25"
-		"ypos"			"32"
+		"ypos"			"40"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"19"
